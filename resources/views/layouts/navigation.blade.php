@@ -15,8 +15,8 @@
                     {{ __('Menu') }}
                 </x-nav-link>
                 @if (auth()->check() && auth()->user()->email == 'admin@gmail.com')
-                    <x-nav-link :href="route('menu.add')" :active="request()->routeIs('menu.add')">
-                        {{ __('Add Menu') }}
+                    <x-nav-link :href="route('admin.products.index')" :active="request()->routeIs('products.index')">
+                        {{ __('Manage Menu') }}
                     </x-nav-link>
                 @endif
                 <x-nav-link :href="route('history.index')" :active="request()->routeIs('history.index')">
