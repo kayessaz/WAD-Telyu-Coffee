@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use App\Models\Product; // Add this import to use the Product model
+use Database\Seeders\ProductSeeder; // Import ProductSeeder
 
 class DatabaseSeeder extends Seeder
 {
@@ -25,5 +27,8 @@ class DatabaseSeeder extends Seeder
                 'password' => bcrypt('admin'),
             ]
         ]);
+
+        // Call ProductSeeder to seed the products
+        $this->call(ProductSeeder::class);
     }
 }

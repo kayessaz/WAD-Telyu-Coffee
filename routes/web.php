@@ -91,4 +91,16 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/galleries/your/{id}', [GalleryController::class, 'delete'])->name('galleries.delete');
     Route::put('/galleries/your/{id}', [GalleryController::class, 'update'])->name('galleries.update');
 });
+Route::middleware(['auth'])->group(function () {
+    Route::prefix('admin/products')->name('admin.products.')->group(function () {
+        Route::get('/', [ProductController::class, 'adminindex'])->name('index');
+        Route::get('/{product}/show', [ProductController::class, 'adminshow'])->name('show');
+        Route::get('/create', [ProductController::class, 'admincreate'])->name('create');
+        Route::post('/', [ProductController::class, 'adminstore'])->name('store');
+        Route::get('/{product}/edit', [ProductController::class, 'adminedit'])->name('edit');
+        Route::put('/{product}', [ProductController::class, 'adminupdate'])->name('update');
+        Route::delete('/{product}', [ProductController::class, 'admindestroy'])->name('destroy');
+    });
+});
+
 
