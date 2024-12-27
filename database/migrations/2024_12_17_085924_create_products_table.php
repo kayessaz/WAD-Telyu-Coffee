@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description');
-            $table->decimal('hot_price',8,2);
-            $table->decimal('ice_price',8,2);
+            $table->float('hot_price',10,2)->nullable();
+            $table->float('ice_price',10,2)->nullable();
             $table->string('image_url')->nullable();
             $table->timestamps();
         });
