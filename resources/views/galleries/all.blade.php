@@ -10,7 +10,7 @@
                     @foreach($galleries as $gallery)
                         <div class="relative gallery-item bg-white p-4 rounded-lg shadow-lg flex flex-col">
                             <!-- Image -->
-                            <img src="{{ asset('storage/' . $gallery->image_path) }}" alt="Image" class="w-full h-48 object-cover rounded-md mb-4">
+                            <img src="{{ asset('storage/' . $gallery->image_path) }}" alt="Image" class="w-full h-auto rounded-md">
 
                             <!-- Description -->
                             <p class="text-gray-800 font-semibold">{{ $gallery->description }}</p>

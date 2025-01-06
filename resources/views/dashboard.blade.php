@@ -222,10 +222,10 @@
         <div class="flex items-center">
             <!-- Images Container -->
             <div id="gallery" class="flex space-x-4 overflow-hidden transition-transform duration-500 ease-in-out">
-                <img src="{{ asset('photos/hot-latte.png') }}" alt="Image 1" class="w-[300px] h-[300px] object-cover aspect-square rounded-lg shadow-lg">
-                <img src="{{ asset('photos/endowment.png') }}" alt="Image 2" class="w-[300px] h-[300px] object-cover aspect-square rounded-lg shadow-lg">
-                <img src="{{ asset('photos/endowment.png') }}" alt="Image 3" class="w-[300px] h-[300px] object-cover aspect-square rounded-lg shadow-lg">
-                <img src="{{ asset('photos/endowment.png') }}" alt="Image 4" class="w-[300px] h-[300px] object-cover aspect-square rounded-lg shadow-lg">
+                <img src="{{ asset('photos/ambience-1.png') }}" alt="Image 1" class="w-[300px] h-[300px] object-cover aspect-square rounded-lg shadow-lg">
+                <img src="{{ asset('photos/ambience-2.png') }}" alt="Image 2" class="w-[300px] h-[300px] object-cover aspect-square rounded-lg shadow-lg">
+                <img src="{{ asset('photos/ambience-3.png') }}" alt="Image 3" class="w-[300px] h-[300px] object-cover aspect-square rounded-lg shadow-lg">
+                <img src="{{ asset('photos/ambience-4.png') }}" alt="Image 4" class="w-[300px] h-[300px] object-cover aspect-square rounded-lg shadow-lg">
             </div>
             <!-- Previous Button -->
             <button id="prevButton" class="absolute mt-7 left-2 top-1/2 transform -translate-y-1/2 bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-2 rounded-full"> &lt; </button>
@@ -237,16 +237,16 @@
     <script>
         const images = [
             [
-                "{{ asset('photos/hot-latte.png') }}",
-                "{{ asset('photos/endowment.png') }}",
-                "{{ asset('photos/endowment.png') }}",
-                "{{ asset('photos/endowment.png') }}"
+                "{{ asset('photos/ambience-1.png') }}",
+                "{{ asset('photos/ambience-2.png') }}",
+                "{{ asset('photos/ambience-3.png') }}",
+                "{{ asset('photos/ambience-4.png') }}"
             ],
             [
-                "{{ asset('photos/hot-latte.png') }}",
-                "{{ asset('photos/endowment.png') }}",
-                "{{ asset('photos/hot-latte.png') }}",
-                "{{ asset('photos/endowment.png') }}"
+                "{{ asset('photos/ambience-5.png') }}",
+                "{{ asset('photos/ambience-6.png') }}",
+                "{{ asset('photos/ambience-7.png') }}",
+                "{{ asset('photos/ambience-8.png') }}"
             ]
         ];
 

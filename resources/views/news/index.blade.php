@@ -69,12 +69,12 @@
                     <div class="bg-white p-4 rounded-lg shadow-lg relative news-item">
                         <div class="flex flex-col md:flex-row items-start mb-6">
                             <!-- Image Section -->
-                            <div class="md:w-1/4 mb-6 md:mb-0 flex-shrink-0 mr-4">
+                            <div class="md:w-1/4 mb-6 md:mb-0 flex-shrink-0">
                                 <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->title }}" class="custom-image object-cover rounded">
                             </div>
 
                             <!-- Content Section -->
-                            <div class="md:w-3/4 md:ml-4 mt-4 md:mt-0">
+                            <div class="ml-2 mt-4 md:mt-0">
                                 <p class="text-sm text-gray-500 mb-2">{{ \Carbon\Carbon::parse($item->upload_date)->format('d M Y') }}</p>
                                 <h3 class="text-xl font-bold mb-2">
                                     {{ $item->title }}

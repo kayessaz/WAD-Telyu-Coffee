@@ -12,7 +12,7 @@
 
     <!-- Category Filter - Positioned at the top left -->
     <div class="ms-auto flex justify-start">
-        <form action="{{ route('admin.products.index') }}" method="GET" class="flex items-center space-x-4">
+        <form action="{{ route('products.index') }}" method="GET" class="flex items-center space-x-4">
             <select name="category" class="border border-gray-300 rounded-lg py-2 px-4">
                 <option value="">All Categories</option>
                 <option value="Non-Coffee" {{ request('category') == 'Non-Coffee' ? 'selected' : '' }}>Non-Coffee</option>

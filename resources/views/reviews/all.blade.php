@@ -13,7 +13,7 @@
                             <div class="flex-1">
                                 <h3 class="text-xl font-semibold text-gray-800">{{ $review->message }}</h3>
                                 <p class="text-sm text-yellow-500">
-                                    Rating: {{ $review->rating }} / 5
+                                    Rating: {{ $review->rating }} / 10
                                 </p>
                                 <!-- Review Content -->
                                 <p class="text-gray-700">{{ $review->content }}</p>

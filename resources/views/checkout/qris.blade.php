@@ -67,7 +67,7 @@
         updateCountdown(); // Initial call
 
         function downloadQris() {
-            const qrisUrl = '{{ asset('photos/qris.jpng') }}'; // Update this path as necessary
+            const qrisUrl = '{{ asset('photos/qris.png') }}'; // Update this path as necessary
             const link = document.createElement('a');
             link.href = qrisUrl;
             link.download = 'Qris.jpg'; // Change to .jpg for download
